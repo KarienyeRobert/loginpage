@@ -50,3 +50,11 @@ form input{
     font-weight: bold;
     color:white;
 }
+
+.error{
+    color: red;
+    background: #fff;
+    width: 300px;
+    padding: 8px;
+    margin-left: 20px;
+}

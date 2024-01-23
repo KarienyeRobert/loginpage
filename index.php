@@ -1,3 +1,7 @@
+<?php
+ include  ("connection.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +12,12 @@
 </head>
 <body>
    <div class="login">
-    <div id="error"></div>
+    <div class="error" id="error"></div>
     <h1>Login</h1>
-    <form id="form" action="/" method="get">
-        <input id="" class="input" type="text" placeholder="UserName">
-        <input id="password" class="input" type="password" placeholder="Password">
-        <input id="login" class="button" type="submit" value="Login">
+    <form name="form" id="form" action="login.php" method="post">
+        <input name="userName" id="userName" class="input" type="text" placeholder="UserName">
+        <input name="pass" id="password" class="input" type="password" placeholder="Password">
+        <input name="submit" id="login" class="button" type="submit" value="Login">
     </form>
     <a href="#">Forgot password?</a><br>
     <a href="#">SignUp instead</a>
